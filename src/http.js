@@ -46,18 +46,7 @@ axios.interceptors.response.use(
     return res.data;
   },
   (error) => {
-    if (error.response) {
-      // switch (error.response.status) {
-      //   default 401:
-      //     store.commit('clearUser');
-      //     router.replace({
-      //       path: 'signIn',
-      //       query: {
-      //         redirect: router.currentRoute.fullPath,
-      //       },
-      //     });
-      // }
-    }
+
     return Promise.reject(error.response);
   });
 export default axios;

@@ -23,9 +23,9 @@ h1,h2,h3,h4,h5,h6,p,span {
 #app {
     height: 100%;
     width: 100%;
-    
+
 }
-/* 头部*/ 
+/* 头部*/
 header.bdp-header{
     position: absolute;
     width: 100%;
@@ -53,7 +53,7 @@ header.bdp-header{
                 text-decoration: none;
                 //   color: #d9f0fd;
                 color: #fff;
-            
+
             }
             p {
                 margin: 0;
@@ -105,7 +105,7 @@ header.bdp-header{
                     }
                 }
             }
-        } 
+        }
     }
     .logout {
         line-height: 59px;
@@ -180,8 +180,8 @@ header.bdp-header{
                                    color: hsla(0, 0%, 100%, .65);
                                }
                            }
-                        }   
-                        
+                        }
+
                     }
                 }
                 cursor: pointer;
@@ -252,10 +252,10 @@ section.bdp-content {
     box-sizing: border-box;
     > .main {
         padding: 20px;
-    } 
+    }
 }
-/* sf-panel */
-.sf-panel {
+/* ra-panel */
+.ra-panel {
     margin: 0 18px 18px 0;
     background-color: #fff;
     border: 1px solid $border-color;
@@ -271,7 +271,7 @@ section.bdp-content {
     .panel-body {
         width: 600px;
         padding: 15px;
-        &.sf-form {
+        &.ra-form {
             margin:0 auto;
             .el-input {
                 width: 300px;
@@ -317,11 +317,11 @@ section.bdp-content {
 }
 
 .btn-primary {
-    @include sf-btn(#fff, $blue, $blue);
-    @include sf-hover(#20a2ff);
+    @include ra-btn(#fff, $blue, $blue);
+    @include ra-hover(#20a2ff);
 }
 .btn-default {
-    @include sf-btn($pr, $pr, #fff);
+    @include ra-btn($pr, $pr, #fff);
     &:hover {
         background-color: #e7f2fa;
 
@@ -336,17 +336,17 @@ a {
     }
 }
 .btn-blue {
-    @include sf-btn(#fff, $blue, $blue);
-    @include sf-hover(#20a2ff);
+    @include ra-btn(#fff, $blue, $blue);
+    @include ra-hover(#20a2ff);
 }
 
 .btn-red {
-    @include sf-btn(#fff, $red, #e5473a);
-    @include sf-hover(#ea4d3d);
+    @include ra-btn(#fff, $red, #e5473a);
+    @include ra-hover(#ea4d3d);
 }
 
 .btn-dis {
-    @include sf-btn(#656565, $border-color, #dedede);
+    @include ra-btn(#656565, $border-color, #dedede);
 }
 
 .btn-lg {
@@ -394,7 +394,7 @@ a {
         padding: 20px;
     }
 }
-.el-dialog__wrapper.sf-form {
+.el-dialog__wrapper.ra-form {
     .el-dialog {
         width: 500px;
         .el-input {

@@ -1,6 +1,6 @@
 <template lang="pug">
-  section.sf-content
-    .sf-panel
+  section.ra-content
+    .ra-panel
       .panel-heading 404
       .panel-body
         h4 您访问页面不存在,{{time}}秒后跳转

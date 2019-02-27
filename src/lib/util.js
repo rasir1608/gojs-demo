@@ -179,7 +179,7 @@ export default {
         let type = options.type;
         const style = options.style;
         const messageNode = document.createElement('div');
-        messageNode.className = 'sf-message';
+        messageNode.className = 'ra-message';
         messageNode.innerHTML = message;
         let messageStyle = {
             padding: '10px 30px 10px 50px',
@@ -292,7 +292,7 @@ export default {
         const fadeTime = 200;
         // 覆盖层可自定义样式
         const coverNode = document.createElement('div');
-        coverNode.className = 'sf-alert-cover';
+        coverNode.className = 'ra-alert-cover';
         let coverStyle = {
             width: '100%',
             height: '100%',
@@ -506,15 +506,15 @@ export default {
         }
     },
     createPopper(depsNode, text, style) {
-        let popperNode = document.getElementById('sf-bdp-popper');
+        let popperNode = document.getElementById('ra-bdp-popper');
         let popperExist = true;
         if (!popperNode) {
             popperNode = document.createElement('div');
-            popperNode.setAttribute('id', 'sf-bdp-popper');
+            popperNode.setAttribute('id', 'ra-bdp-popper');
             popperExist = false;
         }
         popperNode.innerHTML = text;
-        popperNode.className = 'sf-popper';
+        popperNode.className = 'ra-popper';
         const baseStyle = {
             padding: '10px',
             borderRadius: '4px',

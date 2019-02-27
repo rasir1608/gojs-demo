@@ -12,21 +12,20 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://vue.sf-express.com:3004/',
+        target: 'http://xxx.xxxxx.com:3004/',
         pathRewrite: {
           '^/api': '',
         },
       },
       '/gis': {
-        // target: "http://10.118.45.113:8081",
-        target: 'http://lbs.sit.sf-express.com',
+        target: 'http://xxx.xxxxx.com',
         pathRewrite: {
           '^/gis': '',
         },
       },
     },
     // Various Dev Server settings
-    host: 'vue.sf-express.com', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,

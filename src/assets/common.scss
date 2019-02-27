@@ -18,7 +18,7 @@ $border-radius: 4px;
     margin-bottom: 18px;
 }
 
-@mixin sf-btn($color, $border-color, $backgroundColor) {
+@mixin ra-btn($color, $border-color, $backgroundColor) {
     padding: 7.5px 20px;
     margin: 0 5px;
     color: $color;
@@ -38,13 +38,13 @@ $border-radius: 4px;
     line-height: 1.46;
 }
 
-@mixin sf-hover($color) {
+@mixin ra-hover($color) {
     &:hover {
         border-color: $color;
         background-color: $color;
     }
 }
-@mixin sf-clear(){
+@mixin ra-clear(){
   &::after{
     content: '';
     display: block;

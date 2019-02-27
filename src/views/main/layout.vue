@@ -30,7 +30,7 @@ export default {
   width: 100%;
   height: 100%;
 }
-.sf-top-menu.el-menu--horizontal{
+.ra-top-menu.el-menu--horizontal{
   background-color:#fff;
   .el-menu-item{
     padding:0 63px;

@@ -1,19 +1,16 @@
 <template lang="pug">
   #app
-    //- sfHeader
-    section.sf-content
+    section.ra-content
       router-view(:key="key")
 </template>
 
 <script>
 import LeftMenu from './components/leftMenu';
-import sfHeader from './components/header';
 
 export default {
   name: 'app',
   components: {
     LeftMenu,
-    sfHeader,
   },
   // 同组件刷新
   computed: {
@@ -28,7 +25,7 @@ export default {
 
 <style lang="scss">
 #app {
-  .sf-content{
+  .ra-content{
     width: 100%;
     height: 100%;
   }

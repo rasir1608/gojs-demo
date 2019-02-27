@@ -29,20 +29,7 @@ export default {
        nodeMenu: [{
         label: '重跑',
         value: 'rerun',
-        // children: [
-        //   {
-        //     label: '重跑自己',
-        //     value: 'reRunSelf',
-        //   },
-        //   {
-        //     label: '重跑自己及下游',
-        //     value: 'reRunSelfAndSub',
-        //   },
-        //   {
-        //     label: '重跑下游',
-        //     value: 'reRunSub',
-        //   },
-        // ],
+
       },
       {
         label: '任务详情',
@@ -78,7 +65,7 @@ export default {
       modified: () => {
       },
       nodeContextMenu: this.$refs['node-context-menu'],
-      overview: true, 
+      overview: true,
     };
     this.diagram = goTool.startGojs(jobDate.map((e) => {
       e.key = e.id;
@@ -91,7 +78,7 @@ export default {
       this.jobDetailStyle = {
         left: `${e.clientX + 30}px`,
         top: `${e.clientY}px`,
-      }; 
+      };
     },
     getNodeLink(jobLinks) {
       const link = [];
@@ -186,7 +173,7 @@ export default {
       z-index: 3;
       display: none;
       .info-item{
-        @include sf-clear();
+        @include ra-clear();
         line-height: 30px;
         .info-item-label{
           width: 80px;
@@ -238,8 +225,8 @@ export default {
       top: 20px;
       z-index: 9;
       button{
-        @include sf-btn($white,$pr,$blue);
-        @include sf-hover($pr);
+        @include ra-btn($white,$pr,$blue);
+        @include ra-hover($pr);
       }
     }
   }

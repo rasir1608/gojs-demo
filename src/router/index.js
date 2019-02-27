@@ -49,7 +49,7 @@ router.beforeEach((to, from, next) => {
   }
 });
 router.afterEach((route) => {
-  let documentTitle = 'bdp前端';
+  let documentTitle = 'ra';
   route.matched.forEach((path) => {
     if (path.meta.title) {
       documentTitle += ` - ${path.meta.title}`;
